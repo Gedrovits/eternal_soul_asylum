@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "eternal_soul_asylum"
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+
+# (If you use this, don't forget to add pry to your Gemfile!)
+# require "pry"
+# Pry.start
+
+require "irb"
+require "irb/completion"
+
+# Allow auto-reloading changed code
+def reload!
+  files = $LOADED_FEATURES.select { |feat| feat =~ /\/eternal_soul_asylum\// }
+  files.each { |file| load file }
+end
+
+IRB.start
