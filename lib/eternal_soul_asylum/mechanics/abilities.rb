@@ -1,7 +1,8 @@
 require_relative "abilities/ability"
+require_relative "abilities/strength"
 
 module EternalSoulAsylum
-  module Character
+  module Mechanics
     module Abilities
     end
   end

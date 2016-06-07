@@ -3,6 +3,7 @@ module EternalSoulAsylum
     module Genders
       class Gender
         def initialize
+          # Male, Female, Unknown, True Hermaphrodite
         end
       end
     end

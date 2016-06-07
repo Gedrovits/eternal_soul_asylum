@@ -1,8 +1,9 @@
 module EternalSoulAsylum
-  module Character
+  module Mechanics
     module Sizes
-      class Size
+      class Normal < Size
         def initialize
+          super
         end
       end
     end
