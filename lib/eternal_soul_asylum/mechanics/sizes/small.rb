@@ -1,8 +1,8 @@
 module EternalSoulAsylum
   module Mechanics
     module Sizes
-      class Normal < Size
-        def initialize(damage_modifier = 1)
+      class Small < Size
+        def initialize(damage_modifier = 0.5)
           @damage_modifier = damage_modifier
           super
         end

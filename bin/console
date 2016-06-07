@@ -19,4 +19,9 @@ def reload!
   files.each { |file| load file }
 end
 
+# FIXME: Load entities for testing
+@jon_snow = EternalSoulAsylum::Hero.new(name: 'Jon Snow')
+@dog = EternalSoulAsylum::Hero.new(name: 'Dog', size: :small)
+@giant = EternalSoulAsylum::Hero.new(name: 'Giant', size: :large)
+
 IRB.start
